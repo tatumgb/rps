@@ -25,7 +25,9 @@ def compare ( choice1, choice2):
           print ("tie")
 
 
-
+rounds = int(raw_input("Enter number of rounds: "))
+player1_name = raw_input("Enter player1 name: ")
+player2_name = raw_input("Enter player2 name: ")
 counter = 0
 while counter != 3:
     choice1 = choice()
@@ -33,4 +35,5 @@ while counter != 3:
     compare (choice1,choice2)
     counter += 1
     
-    
+print("Thanks for playing {} and {}!".format(player1_name, player2_name))
+
